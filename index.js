@@ -1,4 +1,18 @@
+/*
+GRAND PLANAS:
+- kintamieji / atminties ląstelės (juose atsimenama informacija)
+- if`ai (palyginimas)
+- for`as (ciklai)
+- funkcijos (function)
+- įvykiai (event listeners) -> unikali, veikia tik JS, naršyklėje, reikalingas HTML
+*/
+
+
 // Vienos eilutes komentaras
+
+// Multi
+// line
+// komentaras
 
 /*
 Multi
