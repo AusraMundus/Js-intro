@@ -9,8 +9,9 @@ Kintamųjų iniciavimas:
 - var (nenaudoti, nebent TIKRAI zinote, ka darote)
 
 String`o iniciavimas:
-- viengubos kabutes
-- dvigubos kabutes
+- viengubos (') kabutes
+- dvigubos (") kabutes
+- backtick (`) kabutes
 
 Rasymo taisykles:
 - EN kalba, ne lietuviskos raides
@@ -20,8 +21,13 @@ Rasymo taisykles:
 - "" -> oficialus budas kurti string`us
 - '' -> praktiskas budas kurti string`us
 - Matematiniai operatoriai + - * / -> dirba tik su skaiciais. Isskyrus + kuris taip pat atlieka sujungimo operacija.
+- \ -> panaikina simbolio reiksme (tik ispausdina)
+- \n -> new line, kita eilute isspausdina ten, kur new line yra
+- \r -> return
+- \t -> tab
+- \?
+- ${galima irasyti bet ka}
 */
-
 
 // KINTAMUJU INICIAVIMAS
 
@@ -84,3 +90,64 @@ const word1 = 'Jonukas';
 const word2 = 'yra';
 const word3 = 'berniukas';
 console.log(word1 + ' ' + word2 + ' ' + word3);
+
+console.clear();
+
+// Sveiki, Rimantas!
+
+const username1 = 'Jonas';
+const username2 = 'Maryte';
+const username3 = 'Petras';
+const username4 = 'Ona';
+
+const hi1 = 'Sveiki, ' + username1 + "!";
+const hi2 = 'Sveiki, ' + username2 + "!";
+const hi3 = 'Sveiki, ' + username3 + "!";
+const hi4 = 'Sveiki, ' + username4 + "!";
+
+console.log(hi1);
+console.log(hi2);
+console.log(hi3);
+console.log(hi4);
+
+// Vienguba (') kabute.
+const kabute1 = "Vienguba (') kabute.";
+console.log(kabute1);
+
+// Dviguba (") kabute.
+const kabute2 = 'Dviguba (") kabute.';
+console.log(kabute2);
+
+// Vienguba (') ir dviguba (") kabutes.
+const kabute12 = "Vienguba (') ir" + ' dviguba (") kabutes.';
+console.log(kabute12);
+
+const kabute12_1 = 'Vienguba (\') ir dviguba (") kabutes.';
+console.log(kabute12_1);
+
+const kabute12_2 = "Vienguba (') ir dviguba (\") kabutes.";
+console.log(kabute12_2);
+
+const kabute12_3 = "Vienguba (\') ir dviguba (\") kabutes.";
+console.log(kabute12_3);
+
+const kabute3 = `Vienguba (') ir dviguba (") kabutes.`;
+console.log(kabute3);
+
+// Kabutes: '"`.
+const kabuteAll1 = 'Kabutes: \'"`.';
+const kabuteAll2 = "Kabutes: '\"`.";
+const kabuteAll3 = `Kabutes: '"\`.`;
+const kabuteAll4 = `Kabutes: \'\"\`.`;
+
+console.log(kabuteAll1);
+console.log(kabuteAll2);
+console.log(kabuteAll3);
+console.log(kabuteAll4);
+
+// Your lucky number is 7. Congz!
+const userNumber = 777;
+
+console.log(`Your lucky number is ${userNumber}. Congz!`);
+
+
