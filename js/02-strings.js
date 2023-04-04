@@ -77,22 +77,6 @@ const age1 = 88;
 const prisistatymas = 'Sveiki, mano vardas ' + name1 + ' ir man ' + age1 + ' metai!';
 console.log(prisistatymas);
 
-// UZDUOTYS
-
-// Uzduotis1
-const skaicius1 = 3;
-const skaicius2 = 2;
-const skaicius3 = 1;
-console.log(skaicius1 + skaicius2 + skaicius3);
-
-// Uzduotis2
-const word1 = 'Jonukas';
-const word2 = 'yra';
-const word3 = 'berniukas';
-console.log(word1 + ' ' + word2 + ' ' + word3);
-
-console.clear();
-
 // Sveiki, Rimantas!
 
 const username1 = 'Jonas';

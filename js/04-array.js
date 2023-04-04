@@ -3,7 +3,10 @@ console.clear();
 /*
 ARRAY - sarasas, listas, masyvas, matrica, ...
 
+Kuriami []
+
 Array nariu kiekis: array.length, [].length
+lenght parodo, koks masyvo kiekis
 
 index/pozicija -> Sveiki skaiciai (3.14 NO NO NO)
                 Teigiami skaiciai (nuo 0)
@@ -14,6 +17,8 @@ Pirmas narys visada "sedi" po index 0.
 Masyve gali buti skaiciai, stringai, boolean.
 
 Masyve - daugiskaitine forma.
+
+
 
 */
 
