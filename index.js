@@ -1,10 +1,14 @@
 /*
 GRAND PLANAS:
 - kintamieji / atminties ląstelės (juose atsimenama informacija)
-- if`ai (palyginimas)
-- for`as (ciklai)
+- if'ai (palyginimas)
+- for'as (ciklai)
 - funkcijos (function)
 - įvykiai (event listeners) -> unikali, veikia tik JS, naršyklėje, reikalingas HTML
+
+console.log(...); <- ispausdina terminale reiksme skliaustuose
+
+
 */
 
 

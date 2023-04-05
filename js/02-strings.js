@@ -31,6 +31,7 @@ Rasymo taisykles:
 - \t -> tab
 - \?
 - ${galima irasyti bet ka}
+- simbolis == yra palyginimo operatorius (su IF tipu)
 */
 
 // KINTAMUJU INICIAVIMAS

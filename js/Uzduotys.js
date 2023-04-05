@@ -48,7 +48,9 @@ console.log(animalsSounds);
 console.log(furnitures);
 console.log(flowers);
 
+
 console.log('-----------------------------');
+
 
 // Veiksmai su kintamaisiais
 
@@ -69,18 +71,16 @@ console.log(word1 + ' ' + word2 +  ' '  + word3);
     a. Rezultatą išvesti į console
 */
 
-
+// ???????????????????????????? [skaicius, skaicius, skaicius, skaicius, skaicius]
 
 /*  4. Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas
 */
 const flowers2 = ['tulip', 'lily', 'dandelion', 'rose', 'narcissus'];
-
-console.log(flowers2);
-
-
+console.log(flowers2.reverse(flowers2));
 
 
 console.log('-----------------------------');
+
 
 // Funkcijos
 
