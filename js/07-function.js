@@ -51,11 +51,15 @@ function hi() {
 }
 
 console.log(hi());
+console.log(hi(5));
 console.log(hi(5, 7));
 
 function hello(name) {
     return `Sveiki, mano vardas yra ${name}!`;
 }
+
+console.log(hello);
 console.log(hello());
 console.log(hello('Petras'));
 console.log(hello('Maryte', 'Jonas'));
+console.log(hello('Maryte', 'Jonas', 'Ona'));
