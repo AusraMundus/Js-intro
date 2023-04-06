@@ -78,16 +78,34 @@ console.log(word1 + ' ' + word2 +  ' '  + word3);
 a. Rezultatą išvesti į console
 */
 
-// ???????????????????????????? [skaicius, skaicius, skaicius, skaicius, skaicius]
 // const numbers1 = [1, 5, 9, 11, 15];
+const pirmas1 = numbers1[0];
+const antras1 = numbers1[1];
+const trecias1 = numbers1[2];
+const ketvirtas1 = numbers1[3];
+const penktas1 = numbers1[4];
 
-console.log(numbers1);
-console.log(1, '->', numbers1[0]);
-console.log(-2, '->', numbers1[1]);
-console.log(3, '->', numbers1[2]);
-console.log(-4, '->', numbers1[3]);
-console.log(5, '->', numbers1[4]);
+console.log(`${pirmas1} - ${antras1} + ${trecias1} - ${ketvirtas1} + ${penktas1}`);
 
+// const numbers2 = [2, 4, 8, 56, 89];
+
+const pirmas2 = numbers2[0];
+const antras2 = numbers2[1];
+const trecias2 = numbers2[2];
+const ketvirtas2 = numbers2[3];
+const penktas2 = numbers2[4];
+
+console.log(`${pirmas2} - ${antras2} + ${trecias2} - ${ketvirtas2} + ${penktas2}`);
+
+// const numbers3 = [-56, 85, -2, 0.53, 58];
+
+const pirmas3 = numbers3[0];
+const antras3 = numbers3[1];
+const trecias3 = numbers3[2];
+const ketvirtas3 = numbers3[3];
+const penktas3 = numbers3[4];
+
+console.log(`${pirmas3} - ${antras3} + ${trecias3} - ${ketvirtas3} + ${penktas3}`);
 
 /*  
 4. Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas
