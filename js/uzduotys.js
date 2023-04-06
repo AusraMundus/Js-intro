@@ -173,3 +173,6 @@ function daugyba(skaicius1, skaicius3) {
     return skaicius1 * skaicius3
 }
 console.log(daugyba(skaicius1, skaicius3));
+
+// Kintamuju palyginimas.
+// Ciklos for panaudojimas. 1.2.3.
