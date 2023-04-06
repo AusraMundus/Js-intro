@@ -6,7 +6,7 @@ ARRAY - sarasas, listas, masyvas, matrica, ...
 Kuriami []
 
 Array nariu kiekis: array.length, [].length
-lenght parodo, koks masyvo kiekis
+lenght -> parodo, koks masyvo kiekis (vnt.)
 
 index/pozicija -> Sveiki skaiciai (3.14 NO NO NO)
                 Teigiami skaiciai (nuo 0)

@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "math-operators": "nodemon ./js/10-math-operators.js",
+    "for": "nodemon ./js/09-for.js",
     "if": "nodemon ./js/08-if.js",
     "function": "nodemon ./js/07-function.js",
     "object": "nodemon ./js/06-object.js",
