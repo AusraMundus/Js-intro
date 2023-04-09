@@ -134,9 +134,47 @@ console.log(kabuteAll2);
 console.log(kabuteAll3);
 console.log(kabuteAll4);
 
+
+/*
+<header>
+    <img src="./logo.png" alt="Logo">
+    <nav>
+        <a href="/">Link</a>
+        <a href="/">Link</a>
+        <a href="/">Link</a>
+    </nav>
+</header>
+*/
+
+const logoPath = './logo.png';
+
+const HTML = '\
+<header>\n\r\
+\t<img src="' + logoPath + '" alt="Logo">\n\r\
+\t<nav>\n\r\
+\t\t<a href="/">Link</a>\n\r\
+\t\t<a href="/">Link</a>\n\r\
+\t\t<a href="/">Link</a>\n\r\
+\t</nav>\n\r\
+</header>';
+console.log(HTML);
+
+const HTML2 = `<header>
+    <img src="${logoPath}" alt="Logo">
+    <nav>
+        <a href="/">Link</a>
+        <a href="/">Link</a>
+        <a href="/">Link</a>
+    </nav>
+</header>`;
+console.log(HTML2);
+
 // Your lucky number is 7. Congz!
 const userNumber = 777;
-
 console.log(`Your lucky number is ${userNumber}. Congz!`);
 
+const vardenis = 'Petras';
+const amzius = 99;
+
+console.log(`Sveiki, mano vardas ${vardenis} ir man ${amzius} metu.`);
 
