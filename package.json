@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "ternary": "nodemon ./js/12-ternary.js",
     "switch": "nodemon ./js/11-switch.js",
     "math-operators": "nodemon ./js/10-math-operators.js",
     "for": "nodemon ./js/09-for.js",

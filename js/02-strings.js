@@ -3,13 +3,16 @@ console.clear();
 /*
 STRINGS - simboliu sarasas/junginys, tekstas
 
-const = reiksme,verte
+const = reiksme, verte , kurios 
     const -> kintamasis
     esantis uz simbolio = -> reiksme,verte
 
-Kintamųjų iniciavimas:
-- const (default) -> konstanta, naudojama visada
-- let (tik jei yra poreikis keisti reiksme)
+let = reiksme, verte, kuria galima pakeisti veliau
+
+!!! Kintamųjų iniciavimas:
+
+- const (default) -> konstanta, reiksme, verte, naudojama visada - negali pakeisti veliau
+- let (tik jei yra poreikis keisti reiksme) - reiksme, verte, kuria galima pakeisti veliau
 - var (nenaudoti, nebent TIKRAI zinote, ka darote)
 
 String`o iniciavimas:
