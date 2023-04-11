@@ -95,3 +95,44 @@ console.log('---------------------------');
 // galima nerasyti: ()
 const square4 = a => a * a;
 console.log(`${pirmas} ** 2 = ${square4(pirmas)}`);
+
+console.log('---------------------------');
+
+// Simple uzdavinukai
+
+/*
+function hi() {
+    return 'Labas!'
+}
+*/
+// supaprastintas variantas
+const hi = () => 'Labas!'
+console.log(hi());
+
+/*
+function student(name) {
+    return `Hi, my name is ${name}!`'
+}
+*/
+// supaprastintas variantas
+const student = name => `Hi, my name is ${name}!`;
+
+console.log(student('Petras'));
+console.log(student('Maryte'));
+console.log(student('Eminem'));
+
+console.log('---------------------------');
+
+// elementaria funkcija gali kviesti bet kada, pries aprasant, po aprasymo
+console.log(example());
+
+function example() {
+    return 'Example';
+}
+console.log(example());
+
+
+// eiliskumas butinas, naudojant arrow 
+// pirma apsirasyti, tada kviesti. priezastis -> pasekme
+const sample = (letter) => `This is your sample: ${letter}`;
+console.log(sample('A'));
