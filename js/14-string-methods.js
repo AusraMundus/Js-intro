@@ -5,6 +5,20 @@ STRING METHODS
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 
+
+NUMBER METHODS
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
+
+number.isFinite()
+number.isInteger()
+number.isNAN()
+number.prorotype.toFixed()
+
+ARRAY METHODS
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
 */
 
 // 
