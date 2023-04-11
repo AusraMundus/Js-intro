@@ -2,6 +2,8 @@ console.clear();
 /*
 IF - salygos sakinys, palyginimas
 
+Dirba su konkreciomis reiksmemis (1) ir intervalais (pvz., 0.2)
+
 Palyginimo operatoriai:
 visi: >, <, >=, <=, ==, !=, ===, !==
 naudotini: >, <, >=, <=, ===, !==
@@ -68,17 +70,17 @@ const diena = 11;
 
 if (diena == 1) {
     console.log('Pirmadienis');
-} else if (diena == 2) {
+} else if (diena === 2) {
     console.log('Antradienis')
-} else if (diena == 3) {
+} else if (diena === 3) {
     console.log('Treciadienis');
-} else if (diena == 4) {
+} else if (diena === 4) {
     console.log('Ketvirtadienis');
-} else if (diena == 5) {
+} else if (diena === 5) {
     console.log('Penktadienis');
-} else if (diena == 6) {
+} else if (diena === 6) {
     console.log('Sestadienis');
-} else if (diena == 7) {
+} else if (diena === 7) {
     console.log('Sekmadienis');
 } else {
     console.log('Tokios dienos savaiteje nera.');
@@ -88,31 +90,31 @@ if (diena < 1) {
     console.log('B) Tokios dienos savaiteje nera.');
 }
 
-if (diena == 1) {
+if (diena === 1) {
     console.log('B) Pirmadienis');
 }
 
-if (diena == 2) {
+if (diena === 2) {
     console.log('B) Antradienis');
 }
 
-if (diena == 3) {
+if (diena === 3) {
     console.log('B) Treciadienis');
 }
 
-if (diena == 4) {
+if (diena === 4) {
     console.log('B) Ketvirtadienis');
 }
 
-if (diena == 5) {
+if (diena === 5) {
     console.log('B) Penktadienis');
 }
 
-if (diena == 6) {
+if (diena === 6) {
     console.log('B) Sestadienis');
 }
 
-if (diena == 7) {
+if (diena === 7) {
     console.log('B) Sekmadienis');
 }
 

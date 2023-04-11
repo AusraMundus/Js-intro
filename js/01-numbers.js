@@ -13,6 +13,9 @@ Nenormalus:
     - Begalybe (Infinity)
     - Nesamone (NaN)
 
+isFinite() -> Globali funkcija isFinite() nustato, ar perduota reikšmė yra baigtinis skaičius. Jei reikia, parametras pirmiausia konvertuojamas į skaičių. Grąžina true arba false
+
+
 */
 
 console.log(111);
