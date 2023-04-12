@@ -14,11 +14,6 @@ number.isFinite()
 number.isInteger()
 number.isNAN()
 number.prorotype.toFixed()
-
-ARRAY METHODS
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
-
 */
 
 // 
@@ -109,3 +104,67 @@ function arYraTekste2 (tekstas, raide) {
 }
 console.log('>>', arYraTekste2(kurIeskau, 'p'));
 console.log('>>', arYraTekste2(kurIeskau, 'm'));
+
+console.log('------------------');
+
+// i didziasias, i mazasiasias
+console.log('PoMiDoRaS'.toLowerCase());
+console.log('PoMiDoRaS'.toUpperCase());
+
+console.log('------------------');
+
+// pasako, kur prasideda, jei prasideda
+console.log('PoMiDoRaS'.indexOf('o')); // 1 pozicija
+console.log('PoMiDoRaS'.indexOf('MiDo')); // 2 pozicija
+console.log('PoMiDoRaS'.indexOf('xxx')); // error, nes nera
+
+console.log('------------------');
+
+// pasako, kiek kartoti kartu
+console.log('PoMiDoRaS'.repeat(5));
+
+console.log('------------------');
+
+// pakeisti kazka i kazka
+const pakeisti = 'PoMidoRaS'.replace('M', 'm')
+    .replace('D', 'd')
+    .replace('R', 'r')
+    .replace('S', 's');
+console.log(pakeisti);
+
+console.log('AAAAA'.replace('A', 'a')); // pakeicia pirmaja pozicija
+console.log('AAAAA'.replaceAll('A', 'a')); // pakeicia visus
+
+console.log('------------------');
+
+// slice - isimk gabaliuka
+//           012345678
+console.log('Pomidoras'.slice(2, 5)); // isima nuo iki (iki pozicijos nepaima)
+console.log('Pomidoras'.slice(5)); // isima iki pabaigos nuo pasakytos pozicijos
+console.log('Pomidoras'.slice(0, 'Pomidoras'.length - 1)); // nuimk paskutine raide
+console.log('Pomidoras'.slice(0, -3)); // nuimk 3 paskutines raides
+console.log('Pomidoras'.slice(-3)); // nuimk visas, palik 3 paskutines
+
+// ispausdink rasrasras - 3 budai (nebaigtinis)
+const k = 'Pomidoras';
+
+// bullshit :D daug skaiciavimo
+const ras3_1 = k.slice(-3) + k.slice(-3) + k.slice(-3);
+console.log(ras3_1);
+
+// kodas trumpesnis, bet suka skaiciavimus
+const ras3_2 = k.slice(-3).repeat(3);
+console.log(ras3_2);
+
+// tiketina, kad efektyviausias budas. suskaiciuoji nekintama rezultata ir perpanaudoji
+const raides3 = k.slice(-3);
+const ras3_3 = raides3 + raides3 + raides3;
+console.log(ras3_3);
+
+console.log('------------------');
+
+// trim - pasalina tarpus priekyje ir gale, in between nieko nedaro
+console.log('PoMiDoRaS'.trim());
+console.log('   PoMiDoRaS'.trim());
+console.log('PoMiDoRaS  '.trim());
+console.log('   PoMi    DoRaS  '.trim());
