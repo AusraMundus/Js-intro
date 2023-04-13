@@ -133,6 +133,8 @@ marks.forEach((mark) => {
 });
 console.log('foreach:', forEachSum);
 
+console.log('-----------'); 
+
 // MAP - grazina analogiska masyva
 
 const marks2x = [];
@@ -145,9 +147,100 @@ console.log(marks2x);
 const marks2xMap = marks.map(m => m * 2);
 console.log(marks2xMap);
 
+console.log('-----------'); 
+
 // FILTER - palieka tik tai ko nori masyve (gali ismesti nereikalingas reiksmes)
 
 const studentMarks = [10, 2, -7, 8, -5, 4, 6];
-const filteredMarks = studentMarks.filter(m => m >= 1 && m <= 10);
+const filteredMarks = studentMarks
+    .filter(mark => mark >= 1 && mark <= 10);
 console.log(studentMarks);
 console.log(filteredMarks);
+
+console.log('-----------'); 
+
+// REDUCE - subendrinti rezultata pagal pateikta logika, supaprastanti, is daug padaryti viena.
+
+const reducedSum = marks.reduce((sum, mark) => sum + mark);
+console.log('reduce:', reducedSum);
+
+const reducedSum2 = marks
+    .reduce((sum, mark) => sum + mark, 0);
+console.log('reduce:', reducedSum2);
+
+const reduce1 = [1, 2, 3, 4].reduce((t, n) => t + n);
+// 1+2+3+4=10
+console.log('1 atvejis:', reduce1);
+
+const reduce2 = [1, 2, 3, 4].reduce((t, n) => t + n, 0);
+// 0+1+2+3+4=10
+console.log('2 atvejis:', reduce2);
+
+const reduce3 = [1, 2, 3, 4].reduce((t, n) => t + n, 100);
+// 100+1+2+3+4=10
+console.log('3 atvejis:', reduce3);
+
+const reduce4 = [1, 2, 3, 4].reduce((t, n) => t + n, -100);
+// -100+1+2+3+4=10
+console.log('4 atvejis:', reduce4);
+
+const reduce5 = [1, 2, 3, 4].reduce((t, n) => t - n);
+// 1-2-3-4=-8
+console.log('5 atvejis:', reduce5);
+
+const reduce6 = [1, 2, 3, 4].reduce((t, n) => t - n, 0);
+// 0-1-2-3-4=-10
+console.log('6 atvejis:', reduce6);
+
+const reduce7 = [1, 2, 3, 4].reduce((t, n) => t - n, 100);
+// 100-1-2-3-4=90
+console.log('7 atvejis:', reduce7);
+
+const reduce8 = [1, 2, 3, 4].reduce((t, n) => t - n, -100);
+// -100-1-2-3-4=-110
+console.log('8 atvejis:', reduce8);
+
+const reduce9 = [1, 2, 3, 4].reduce((t, n) => t * n, 10);
+// 10*1*2*3*4=240
+console.log('9 atvejis:', reduce9);
+
+const reduce10 = [1, 2, 3, 4].reduce((t, n) => t / n, 10);
+// 10/1/2/3/4=0.4166666666666667   
+console.log('10 atvejis:', reduce10);
+
+const reduce11 = [1, 2, 3, 4].reduce((t, n) => t % n, 10);
+// ats 0
+console.log('11 atvejis:', reduce11);
+
+console.log('---------------------');
+
+// SORT
+
+marks.sort();
+console.log(marks);
+
+marks.sort((a, b) => a - b);
+console.log(marks);
+
+marks.sort((a, b) => b - a);
+console.log(marks);
+
+console.log('---------------------');
+
+console.clear();
+
+// VIDURKIS - uzdavinys
+const pazymiai = [10, 2, 'Petras', true, 8, -7, [], {}, undefined, NaN, Infinity, -Infinity, 4, 6, Math.E, Math.PI, 3.14, null, 0];
+
+const tikriPazymiai = pazymiai
+    .filter(p => typeof p === 'number')
+    .filter(p => p > 0)
+    .filter(p => p <= 10)
+    .filter(p => p % 1 === 0)
+    // galima apjungti i viena filteri, su &&
+    
+const vidurkis = tikriPazymiai
+    .reduce((s, p) => s + p, 0) / tikriPazymiai.length;
+
+console.log(tikriPazymiai);
+console.log(vidurkis);
