@@ -1,11 +1,14 @@
 console.clear();
 /*
+... -> pradzioje reikia daugtaskio
 
-SPREAD
+SPREAD - spreadinam, isskleidziam, iskopijuojam, galima prisideti kita informacija, pakeisti turima info (overraidinti). Svarbu eiliskumas.
 
-REST
+REST - visa kita
 
 Patogus dalykai, bet ryja resursus
+
+Dirba su masyvais ir objektais, su viduje esanciais elementais
 */
 
 const students = ['Jonas', 'Maryte', 'Petras', 'Ona'];
@@ -92,6 +95,7 @@ const car = {
     color: 'red',
 };
 
+//spread - su object 
 const carCopy = { ...car };
 console.log(car);
 console.log(carCopy);
@@ -129,3 +133,52 @@ function suma(a, ...numbers) {
 console.log(suma(1, 2, 3, 4));
 console.log(suma(1, 2));
 console.log(suma(1));
+
+console.log('-------------------');
+console.clear();
+
+const mouse = [1, 2, 3];
+const mouseCopy = [...mouse];
+const mouse3xCopy = [...mouse, ...mouse, ...mouse];
+const mouse45 = [...mouse, 4, 5];
+const mouse456 = [6, ...mouse, 4, 5];
+
+console.log(mouse);
+console.log(mouseCopy);
+console.log(mouse3xCopy);
+console.log(mouse45);
+console.log(mouse456);
+
+console.log('-------------------');
+
+const varle = {
+    pirstu: 4,
+    kelnes: 'green',
+    arKabo: true,
+};
+
+const varle2 = {...varle};
+const varle3 = {...varle, ugis: 18};
+const varle4 = {...varle, kelnes: 'red'};
+const varle5 = {kelnes: 'red', ...varle};
+
+console.log(varle);
+console.log(varle2);
+console.log(varle3);
+console.log(varle4);
+console.log(varle5);
+
+console.log('-------------------');
+
+// ko nedaryti - nespredinti po papildoma reiksme
+let marks = [];
+marks = [...marks, 10];
+marks = [...marks, 2];
+marks = [...marks, 6];
+marks = [...marks, 4];
+marks = [...marks, 6];
+
+//reikia naudoti - PUSH
+marks.push(7);
+
+console.log(marks);
