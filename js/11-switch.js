@@ -132,6 +132,7 @@ switch (procesoEtapas) {
 
     case 3:
         console.log('Isideti priedu');
+        
     case 4:
         console.log('Uzpilti vandeniu');
 

@@ -1,11 +1,12 @@
 console.clear();
 /*
 
-LOOPS - ciklai
+LOOPS - ciklai. Veiksmą kartoja keletą kartų.
 
 */
 
 // FOR - ciklu tevas, pamatas
+
 console.log('>>> FOR:');
 for (let i = 0; i < 5; i++) { // primityvi forma
     console.log(i);
@@ -97,14 +98,14 @@ for (let i = 0; i < marks.length; i++) {
 }
 console.log('for:', forSum);
 
-// FOR-OF
+// FOR-OF - Ciklas for...of veikia reikšmes, gaunamas iš kartojamo po vieną eilės tvarka. 
 let forOfSum = 0;
 for (const mark of marks) {
     forOfSum += mark;
 }
 console.log('for-of:', forOfSum);
 
-// WHILE - tol, kol (kiek laiko daryti) mandagus gezas - paklausia ir tada duoda i nosi
+// WHILE - tol, kol.  Mandagus gezas - paklausia ir tada duoda i nosi
 let whileSum = 0;
 let = iWhile = 0;
 while (iWhile < marks.length) {
@@ -114,7 +115,7 @@ while (iWhile < marks.length) {
 }
 console.log('while:', whileSum);
 
-// DO-WHILE - tol, kol (kiek laiko daryti) tikras gezas - duoda i nosi ir paklausia, ar dar testi
+// DO-WHILE - daryk tol, kol. Teiginys visada vykdomas prieš patikrinant sąlygą. tikras gezas - duoda i nosi ir paklausia, ar dar testi
 
 let doWhileSum = 0;
 let iDoWhile = 0;
@@ -125,7 +126,7 @@ do {
 } while (iDoWhile < marks.length);
 console.log('do-while:', doWhileSum);
 
-// FOREACH - techniskai cikliskas metodas
+// FOREACH - array method. Metodas forEach() vieną kartą vykdo pateiktą funkciją kiekvienam masyvo elementui.
 
 let forEachSum = 0;
 marks.forEach((mark) => {
@@ -135,7 +136,7 @@ console.log('foreach:', forEachSum);
 
 console.log('-----------'); 
 
-// MAP - grazina analogiska masyva
+// MAP - array method. Grazina analogiska masyva. Map() metodas sukuria naują masyvą, užpildytą pateiktos funkcijos iškvietimo rezultatais kiekviename iškvietimo masyvo elemente.
 
 const marks2x = [];
 for (const mark of marks) {
@@ -149,7 +150,8 @@ console.log(marks2xMap);
 
 console.log('-----------'); 
 
-// FILTER - palieka tik tai ko nori masyve (gali ismesti nereikalingas reiksmes)
+// FILTER - array method. Palieka tik tai ko nori masyve (gali ismesti nereikalingas reiksmes).
+// Filtro() metodas sukuria negilią tam tikro masyvo dalies kopiją, išfiltruotą iki tų elementų iš nurodyto masyvo, kurie išlaiko pateiktos funkcijos atliktą testą.
 
 const studentMarks = [10, 2, -7, 8, -5, 4, 6];
 const filteredMarks = studentMarks
@@ -159,7 +161,8 @@ console.log(filteredMarks);
 
 console.log('-----------'); 
 
-// REDUCE - subendrinti rezultata pagal pateikta logika, supaprastanti, is daug padaryti viena.
+// REDUCE - array method. Subendrinti rezultata pagal pateikta logika, supaprastanti, is daug padaryti viena.
+// Sumažinimo () metodas kiekviename masyvo elemente vykdo vartotojo pateiktą „redukcijos“ atgalinio iškvietimo funkciją, perduodant grįžtamąją vertę iš ankstesnio elemento skaičiavimo. Galutinis reduktoriaus paleidimo visuose masyvo elementuose rezultatas yra viena reikšmė.
 
 const reducedSum = marks.reduce((sum, mark) => sum + mark);
 console.log('reduce:', reducedSum);
@@ -214,7 +217,8 @@ console.log('11 atvejis:', reduce11);
 
 console.log('---------------------');
 
-// SORT
+// SORT - array method.
+// Metodas sort() surūšiuoja masyvo elementus į vietą ir grąžina nuorodą į tą patį masyvą, dabar surūšiuotą. Numatytoji rūšiavimo tvarka yra didėjimo tvarka, sukurta konvertuojant elementus į stringus.
 
 marks.sort();
 console.log(marks);

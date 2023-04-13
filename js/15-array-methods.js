@@ -6,52 +6,92 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 */
 
-const marks = [1];
+const marks = [2, 5];
 console.log(marks);
 
-// .push - itraukia, priskiria reiksme, deda i gala
+
+console.log('---.push---');
+// .push - itraukia naujus elementus, i pabaiga
+// Push() metodas prideda nurodytus elementus į masyvo pabaigą ir grąžina naują masyvo ilgį.
+
 marks.push(10);
 console.log(marks);
 
 marks.push(5);
 console.log(marks);
 
-// .unshift - itraukia i pradzia ???
+
+console.log('---.unshift---');
+// .unshift - itraukia naujus elementus, i pradzia 
+// Metodas unshift() prideda nurodytus elementus į masyvo pradžią ir grąžina naują masyvo ilgį.
+
 marks.unshift(7);
 console.log(marks);
 
 marks.unshift(3);
 console.log(marks);
 
-// .shift - nuima nuo pradzios ????
-marks.shift();
-console.log(marks);
 
-// .pop - ?????
+console.log('---.pop---');
+// .pop - nuima elementa nuo pabaigos
+// Pop() metodas pašalina paskutinį elementą iš masyvo. Šis metodas keičia masyvo ilgį. Grąžina pašalintą elementą.
+
 marks.pop();
-console.log(marks);
+console.log(marks); // grazina trumpesni masyva  
 
-console.log(marks.length);
+console.log(marks.pop());  // grazina pasalinta elementa
 
-// .at
-console.log(marks.at(1)); // ima visus
-console.log(marks[-1]); // array tik su indeksais nuo 0
+console.log(marks.length); 
 
-// .include
+
+console.log('---.shift---');
+// .shift - nuima elementa nuo pradzios
+// Shift() metodas pašalina pirmąjį elementą iš masyvo. Šis metodas keičia masyvo ilgį. Grąžina pašalintą elementą. 
+
+marks.shift();
+console.log(marks); // grazina trumpesni masyva
+
+console.log(marks.shift()); // grazina pasalinta elementa
+
+
+console.log('---.at---');
+// .at - Metodas at() paima sveikojo skaičiaus reikšmę ir grąžina elementą pagal tą indeksą, leidžiantį naudoti teigiamus ir neigiamus sveikuosius skaičius. Neigiami sveikieji skaičiai skaičiuojami nuo paskutinio masyvo elemento.
+
+console.log(marks.at(-1)); // Su .at gali būti visi sveiki skaičiai, teigiami, neigiami, nulis
+console.log(marks[-1]); // Blogai, nes masyve gali buti tik indeksai nuo 0
+
+
+console.log('---.includes---');
+// .includes - Metodas include() nustato, ar masyve yra tam tikra reikšmė tarp savo įrašų, atitinkamai grąžinant true arba false.
+
 console.log(marks.includes(555));
 console.log(marks.includes(7));
 
-// .indexOf
-console.log(marks.indexOf(7));
+
+console.log('---.indexOf---');
+// .indexOf - Metodas indexOf() grąžina pirmąjį indeksą, kuriame masyve galima rasti nurodytą elementą, arba -1, jei jo nėra.
+
+console.log(marks.indexOf(5));
 console.log(marks.indexOf(10));
 
-// .join
-console.log(marks.join(', '));
 
-// .reverse
+console.log('---.join---');
+// .join - Metodas join() sukuria ir grąžina naują stringą, sujungdamas visus masyvo (arba į masyvą panašaus objekto) elementus, atskirtus kableliais arba nurodytu skyrikliu. Jei masyve yra tik vienas elementas, tada tas elementas bus grąžintas nenaudojant skyriklio.
+
+console.log(marks.join());
+console.log(marks.join('; '));
+console.log(marks.join('-'));
+
+
+console.log('---.reverse---');
+// .reverse - Reverse() metodas apverčia masyvą vietoje ir grąžina nuorodą į tą patį masyvą, pirmasis masyvo elementas dabar tampa paskutiniu, o paskutinis masyvo elementas tampa pirmuoju. Kitaip tariant, elementų tvarka masyve bus pasukta priešinga kryptimi, nei nurodyta anksčiau.
+
 console.log(marks.reverse());
 
-// .sort 1,10,2,55...
+
+console.log('---.sort---');
+// .sort 1,10,2,55... a, c, gggg, u...
+// Metodas sort() surūšiuoja masyvo elementus į vietą ir grąžina nuorodą į tą patį masyvą, dabar surūšiuotą. Numatytoji rūšiavimo tvarka yra didėjimo tvarka, sukurta konvertuojant elementus į stringus.
 
 // .sort - stringus abeceles tvarka surusiuoja. abcd... 
 const dic = ['geras', 'blogas', 'labas', 'rytas', 'acių'];
@@ -70,8 +110,6 @@ console.log(num);
 // su arrow skaicius sort'ina eiles tvarka, nuo max iki min
 num.sort((a, b) => b - a);
 console.log(num);
-
-console.clear();
 
 // reiksme su masyvu ir objektais
 const students = [
@@ -118,3 +156,5 @@ students.sort ((a, b) => {
     }
 })
 console.log(students);
+
+

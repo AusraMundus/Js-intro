@@ -18,7 +18,7 @@ let = reiksme, verte, kuria galima pakeisti veliau
 String`o iniciavimas:
 - viengubos (') kabutes
 - dvigubos (") kabutes
-- backtick (`) kabutes
+- backtick (``) kabutes
 
 Rasymo taisykles:
 - EN kalba, ne lietuviskos raides
@@ -27,14 +27,15 @@ Rasymo taisykles:
 - simbolis + yra sujungimo operatorius. Jei aplink + bus skaiciai, atliks matematini veiksma.
 - "" -> oficialus budas kurti string`us
 - '' -> praktiskas budas kurti string`us
+- `` -> patogu, kai yra naudojamos kitos kabutes
 - Matematiniai operatoriai + - * / -> dirba tik su skaiciais. Isskyrus + kuris taip pat atlieka sujungimo operacija.
 - \ -> panaikina simbolio reiksme (tik ispausdina)
 - \n -> new line, kita eilute isspausdina ten, kur new line yra
 - \r -> return
 - \t -> tab
 - \?
-- ${galima irasyti bet ka}
-- simbolis == yra palyginimo operatorius (su IF tipu)
+- ${ } - parametro, su kintama reiksme, rasymas (viduje - stringas, skaicius)
+- simbolis === yra palyginimo operatorius (su IF tipu)
 */
 
 // KINTAMUJU INICIAVIMAS

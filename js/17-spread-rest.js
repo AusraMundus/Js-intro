@@ -2,9 +2,14 @@ console.clear();
 /*
 ... -> pradzioje reikia daugtaskio
 
-SPREAD - spreadinam, isskleidziam, iskopijuojam, galima prisideti kita informacija, pakeisti turima info (overraidinti). Svarbu eiliskumas.
+SPREAD - spreadinam, isskleidziam, iskopijuojam, galima prisideti kita informacija, pakeisti turima info (overraidinti).
 
-REST - visa kita
+Išplitimo (...) sintaksė leidžia kartoti, pavyzdžiui, array arba string, išplėsti tose vietose, kur tikimasi nulio ar daugiau argumentų (funkcijų iškvietimui) arba elementų (masyvo literalams). Objekto literale išplitimo sintaksė išvardija objekto savybes ir prideda rakto-reikšmių poras prie kuriamo objekto.
+Svarbu eiliskumas.
+
+REST - visa kita.
+
+Likusio parametro sintaksė leidžia funkcijai priimti neribotą skaičių argumentų kaip masyvą, 
 
 Patogus dalykai, bet ryja resursus
 
@@ -137,6 +142,8 @@ console.log(suma(1));
 console.log('-------------------');
 console.clear();
 
+// spread - papildoma info pridedama
+
 const mouse = [1, 2, 3];
 const mouseCopy = [...mouse];
 const mouse3xCopy = [...mouse, ...mouse, ...mouse];
@@ -177,7 +184,6 @@ marks = [...marks, 2];
 marks = [...marks, 6];
 marks = [...marks, 4];
 marks = [...marks, 6];
-
 //reikia naudoti - PUSH
 marks.push(7);
 

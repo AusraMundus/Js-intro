@@ -6,11 +6,11 @@ ARROW function - rodyklines funkcijos
 Skirtingi budai uzrasyti funcija.
 */
 
-
 const pirmas = 7;
 const antras = 5;
 
-// function declaration . tipinis variantas, kaip galima uzrasyti funkcija.
+console.log('---Function declaration---');
+// Function declaration. Tipinis variantas, kaip galima uzrasyti funkcija.
 
 function sum (a, b) {
     return a + b;
@@ -39,7 +39,9 @@ console.log(`${pirmas} ** 2 = ${square(pirmas)}`);
 
 console.log('---------------------------');
 
-// anonimous function
+console.log('---Anonymous function---');
+// Traditional anonymous function
+
 const diff2 = function (a, b) {
     return a - b;
 }
@@ -67,7 +69,9 @@ console.log(`${pirmas} ** 2 = ${square2(pirmas)}`);
 
 console.log('---------------------------');
 
-// arrow function (rodykline funkcija)
+console.log('---Arrow function---');
+// Arrow function (rodykline funkcija)
+
 const div3 = (a, b) => {
     return a / b;
 }
@@ -98,7 +102,7 @@ console.log(`${pirmas} ** 2 = ${square4(pirmas)}`);
 
 console.log('---------------------------');
 
-// Simple uzdavinukai
+// SIMPLE UZDAVINUKAI
 
 /*
 function hi() {

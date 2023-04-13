@@ -4,14 +4,14 @@ IF - salygos sakinys, palyginimas
 
 Dirba su konkreciomis reiksmemis (1) ir intervalais (pvz., 0.2)
 
-Palyginimo operatoriai:
-visi: >, <, >=, <=, ==, !=, ===, !==
-naudotini: >, <, >=, <=, ===, !==
-nenaudotini: ==, != 
+Comparison operators - Palyginimo operatoriai:
+    visi: >, <, >=, <=, ==, !=, ===, !==
+        naudotini: >, <, >=, <=, ===, !==
+            nenaudotini: ==, != 
 
 Loginiai operatoriai:
-AND &&
-OR ||
+    AND -> &&
+    OR -> ||
 
 Sablonai:
 if () {}

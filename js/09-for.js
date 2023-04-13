@@ -1,6 +1,22 @@
 console.clear();
 /* 
-FOR - loop, ciklas (kazkas kartojasi)
+FOR - loop, ciklas (kazkas kartojasi). Veiksmą kartoja keletą kartų.
+
+LOOP - ciklo veikimas, kartoti n kartu
+
+
+for (kur pradedi(nuo); kur judi(iki); kaip atnaujini cikla;) {
+     console.log(i);
+}
+
+for (let i = 10; i < 15; i = i + 1) {
+    console.log('darau...', i);
+}
+for (let i = 0; i < list.length; i++) {
+    console.log(i, '->', list[i]);
+}
+
+
 */
 
 const marks = [10, 2, 8, 4, 6];
@@ -32,11 +48,7 @@ console.log('Suma:', sum);
 const average = sum / count;
 console.log('Vidurkis:', average);
 
-//  LOOP - ciklo veikimas, kartoti n kartu
-//  let i = 0;
-//  for (kur pradedi(nuo); kur judi(iki); kaip atnaujini cikla;) {
-//      console.log(i);
-//  }
+
 
 console.log('START');
 

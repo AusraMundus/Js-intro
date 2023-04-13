@@ -38,7 +38,8 @@ console.log(convertMyMoney(200));
 
 console.log('----------------');
 
-function sum(a, b) {
+// Tradicine funkcija
+function sum (a, b) {
     return a + b;
 }
 

@@ -2,7 +2,7 @@ console.clear();
 /* 
 OBJECT - objektas
 
-Kuriami {}
+Kuriami viduje {}
 
 {key: value}
 
