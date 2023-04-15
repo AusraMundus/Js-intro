@@ -7,7 +7,7 @@ SPREAD - spreadinam, isskleidziam, iskopijuojam, galima prisideti kita informaci
 Išplitimo (...) sintaksė leidžia kartoti, pavyzdžiui, array arba string, išplėsti tose vietose, kur tikimasi nulio ar daugiau argumentų (funkcijų iškvietimui) arba elementų (masyvo literalams). Objekto literale išplitimo sintaksė išvardija objekto savybes ir prideda rakto-reikšmių poras prie kuriamo objekto.
 Svarbu eiliskumas.
 
-REST - visa kita.
+REST - ...visa kita.
 
 Likusio parametro sintaksė leidžia funkcijai priimti neribotą skaičių argumentų kaip masyvą, 
 
