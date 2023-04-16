@@ -105,3 +105,17 @@ const hi = 'labas';
 for (let i = 0; i < hi.length; i++) {
     console.log(i, '->', hi[i]);
 }
+
+console.log('---------------------------------');
+
+console.log('---ARRAY SKAICIU SUMA - SU FOR---');
+
+function arraySum(a) {
+    let sumOfArray = 0;
+    for (let i = 0; i < a.length; i++) {
+      sumOfArray += a[i];
+    }
+    return sumOfArray; 
+  }
+  console.log(arraySum([1, 2, 3]));
+  

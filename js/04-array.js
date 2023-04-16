@@ -77,3 +77,18 @@ const index = 4;
 const asmuo = skolininkai[index - 1];
 const skola = skolos[index-1];
 console.log(`${index}) ${asmuo} - ${skola}`);
+
+
+console.log('---------------------------------');
+
+console.log('---ARRAY SKAICIU SUMA - SU FOR---');
+
+function arraySum(a) {
+    let sumOfArray = 0;
+    for (let index = 0; index < a.length; index++) {
+      sumOfArray += a[index];
+    }
+    return sumOfArray; 
+  }
+  console.log(arraySum([1, 2, 3]));
+  
