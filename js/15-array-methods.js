@@ -67,6 +67,12 @@ console.log('---.includes---');
 console.log(marks.includes(555));
 console.log(marks.includes(7));
 
+function check(a, x) {
+    return a.includes(x);
+  }
+console.log(check([66, 101], 66)); //true
+console.log(check([101, 45, 75, 105, 99, 107], 108)); //false
+console.log(check(['t', 'e', 's', 't'], 'e')); //true
 
 console.log('---.indexOf---');
 // .indexOf - Metodas indexOf() grąžina pirmąjį indeksą, kuriame masyve galima rasti nurodytą elementą, arba -1, jei jo nėra.

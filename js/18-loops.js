@@ -162,7 +162,7 @@ console.log(filteredMarks);
 console.log('-----------'); 
 
 // REDUCE - array method. Subendrinti rezultata pagal pateikta logika, supaprastanti, is daug padaryti viena.
-// Sumažinimo () metodas kiekviename masyvo elemente vykdo vartotojo pateiktą „redukcijos“ atgalinio iškvietimo funkciją, perduodant grįžtamąją vertę iš ankstesnio elemento skaičiavimo. Galutinis reduktoriaus paleidimo visuose masyvo elementuose rezultatas yra viena reikšmė.
+// Sumažinimo () metodas kad suranda visų masyvo skaičių sumą.
 
 const reducedSum = marks.reduce((sum, mark) => sum + mark);
 console.log('reduce:', reducedSum);
