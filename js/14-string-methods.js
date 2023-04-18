@@ -214,3 +214,20 @@ console.log('PoMiDoRaS'.trim());
 console.log('   PoMiDoRaS'.trim());
 console.log('PoMiDoRaS  '.trim());
 console.log('   PoMi    DoRaS  '.trim());
+
+console.log('---.split---');
+// .split - pasalina tarpus priekyje ir gale, in between nieko nedaro
+
+const strrr = 'The quick brown fox jumps over the lazy dog.';
+
+const words = strrr.split(' ');
+console.log(words[3]);
+// Expected output: "fox"
+
+const chars = strrr.split('');
+console.log(chars[8]);
+// Expected output: "k"
+
+const strCopy = strrr.split();
+console.log(strCopy);
+// Expected output: Array ["The quick brown fox jumps over the lazy dog."]
